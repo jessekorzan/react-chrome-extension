@@ -17,4 +17,4 @@ The example here also includes a #shadow-dom wrapper so your Extension styles is
 5. 'chrome://extensions/' make sure your in Developer mode and after 'yarn build', click 'load unpacked' and choose your 'build' folder
 6. You should be off to the races...
 
-Note: In step 3... Leveraging CRA's 'asset-manifest.json' overcomes the issue of the hashing and chunking that React performs during 'yarn build' steps. If you've ever struggled with building React based Chrome Extensions... you'll see this is an easier path.
+Note: In step 3... Leveraging CRA's 'asset-manifest.json' overcomes the issue of the hashing and chunking that React performs during 'yarn build' steps. Because everytime you compile, the React assets change filenames so it was a PITA to keep changing the hardcoded values in background.js. You can eject CRA and do a custom config for webpack or command line commands to change filenames, etc but none of these proved reliable. Nor easy for a hack like me.
