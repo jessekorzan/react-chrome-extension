@@ -1,5 +1,6 @@
 # react-chrome-extension
 Chrome Extension boilerplate with React
+![diagram](https://miro.medium.com/max/1440/1*WmjsIQjG0PhC-AwFMGUX_w.png)
 ---
 ### Please note
 - Assumes you are familiar with create-react-app (CRA) and building Chrome Extensions
