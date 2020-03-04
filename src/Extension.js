@@ -1,5 +1,7 @@
 /* global chrome */
 import React, { useState } from 'react';
+// you don't have to do your CSS like this, but one of the benefits of Shadow Dom
+// is encapsulating your styles from the target webpage (prevent collusion, etc)
 import { styles } from './_Extension.css';
 
 function App() {
