@@ -13,8 +13,8 @@ The example here also includes a #shadow-dom wrapper so your Extension styles is
 1. Use CRA as you normally would do for any React project
 2. From this repo... add the bits in /src/index.js so your Chrome Extension has a place to inject the React app into the DOM
 3. Including /public/background.js (typical for a custom Chrome Extension), Chrome API injects the necessary React .js and .css (as compiled assets in the /build/static folder)
-4. Everything in /public becomes "the extension" after 'yarn build' (the manifest and badge icon, etc are all here... you don't need the index.html but it's useful during dev)
-5. 'chrome://extensions/' make sure your in Developer mode and after 'yarn build', click 'load unpacked' and choose your 'build' folder
+4. Everything in /public is requried for "the Extension" after 'yarn build' (the manifest and badge icon, etc are all here... you don't need the index.html but it's useful during dev)
+5. 'chrome://extensions/' make sure your in Developer Mode and after 'yarn build', click 'load unpacked' and choose your 'build' folder
 6. You should be off to the races...
 
-Note: In step 3... Leveraging CRA's 'asset-manifest.json' overcomes the issue of the hashing and chunking that React performs during 'yarn build' steps. Because everytime you compile, the React assets change filenames so it was a PITA to keep changing the hardcoded values in background.js. You can eject CRA and do a custom config for webpack or command line commands to change filenames, etc but none of these proved reliable. Nor easy for a hack like me.
+Note: In step 3... Leveraging CRA's 'asset-manifest.json' overcomes the issue of the hashing and chunking that React performs during 'yarn build' steps. Because everytime you compile, the React assets change filenames so it was a PITA to keep changing the hardcoded values in background.js. You can eject CRA and do a custom config for webpack or command line commands to change filenames, etc but none of these proved reliable or efficient. Nor were they easy. At least... for a joker like me :)
