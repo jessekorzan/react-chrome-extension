@@ -1,11 +1,11 @@
 # react-chrome-extension
 Chrome Extension boilerplate with React
 ---
-## Please note
+### Please note
 Assumes you are familiar with create-react-app (CRA) and building Chrome Extensions
 
 ## What does this boilerplate do?
-Provides a clean boilerplate for building fully custom Chrome Extensions using React. Leveraging CRA's 'asset-manifest.json', the Chrome background.js script can inject a React Chrome Extension into any webpage (or tab) WITHOUT ejecting CRA, changing package.json, adding customizations to webpack, etc, etc. Just a simple clean reliable boilerplate that works without customizing CRA.
+Provides a simple start for building custom Chrome Extensions using React. Leveraging CRA's 'asset-manifest.json', the Chrome background.js script can inject a React Chrome Extension into any webpage (or tab) WITHOUT ejecting CRA, changing package.json, adding customizations to webpack, etc, etc. Just a reliable boilerplate that works without customizing CRA.
 
 The example here also includes a #shadow-dom wrapper so your Extension styles is encapsulated from colluding with the target webpage. You don't have to use it, but recommended to go this route (plenty of good articles on the web to learn more).
 
