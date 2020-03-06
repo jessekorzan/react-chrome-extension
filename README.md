@@ -21,3 +21,5 @@ The example here also includes a #shadow-dom wrapper so your Extension styles is
 6. You should be off to the races...
 
 Note: In step 3... Leveraging CRA's 'asset-manifest.json' overcomes the issue of the hashing and chunking that React performs during 'yarn build' steps. Because everytime you compile, the React assets change filenames so it was a PITA to keep changing the hardcoded values in background.js. You can eject CRA and do a custom config for webpack or command line commands to change filenames, etc but none of these proved reliable or efficient. Nor were they easy. At least... for a joker like me :)
+
+Read more: https://medium.com/@jessekorzan/how-to-build-advanced-chrome-extensions-with-react-c6e37ca84109
